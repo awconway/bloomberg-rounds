@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>index.utf8.md</title>
+    <meta charset="utf-8" />
+      <head>
+        <!-- Place your kit's code here -->
+        <script src="https://kit.fontawesome.com/db7db5fd59.js"></script>
+      </head>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: center top hide-count
+
+
+## How &lt;strong&gt;you&lt;/strong&gt; can help solve the reproducibility crisis
+&lt;br&gt;
+&lt;img src="img/you.png" height = "300px"/&gt;
+
+### Aaron Conway
+### &lt;i class="fab fa-github-square"&gt;&lt;/i&gt; [Code](http://github.com/awconway/bloomberg-rounds) &lt;i class="fad fa-link"&gt;&lt;/i&gt; [bloomberg-rounds.netlify.com](https://bloomberg-rounds.netlify.com) &lt;i class="fab fa-twitter-square"&gt;&lt;/i&gt; [aw_conway](https://twitter.com/aw_conway)
+---
+
+class: left middle hide-count
+
+##&lt;i class="fad fa-exclamation-triangle"&gt;&lt;/i&gt; The reproducibility problem
+
+##&lt;i class="fad fa-toolbox"&gt;&lt;/i&gt; How to make your analysis reproducible
+
+##&lt;i class="fad fa-grin-stars"&gt;&lt;/i&gt; Added benefits from using R
+
+---
+
+class: center middle hide-count inverse
+
+# The problem
+
+---
+class: center middle hide-count
+
+## Even the most well-meaning of us can make careless errors that undermine the reproducibility and *credibility* of science
+
+---
+class: center middle hide-count
+
+background-image: url(http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg)
+
+background-size: contain
+
+---
+
+class: center, middle, hide-count
+
+background-image: url(http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg)
+
+background-size: contain
+
+background-position: left
+
+.pull-right[
+## Why reproducibility is so hard
+]
+
+---
+class: center middle hide-count
+
+
+&lt;iframe width="600" height="400" src="https://www.youtube.com/embed/66oNv_DJuPc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+---
+class: center, middle, hide-count
+&lt;h2&gt;&lt;div align="left"&gt;
+&lt;blockquote&gt;Reproducibility has the potential to serve as a &lt;strong&gt;minimum standard&lt;/strong&gt; for judging scientific claims when full independent replication of a study is not possible.
+&lt;blockquote&gt;
+&lt;/div&gt;
+&lt;/h2&gt;
+
+&lt;img src="https://annakrystalli.me/talks/assets/repro-spectrum.jpg"/&gt;
+&lt;sub&gt;Source: https://annakrystalli.me/talks/assets/repro-spectrum.jpg&lt;/sub&gt;
+
+
+???
+## Data shared in accessible format
+## Public funding 
+## Journals may one day (soon) *require* that data *and* code are made available
+## *Biostatistics* 'badges' articles with an R if the associate editor can reproduce the results reported in the paper with the data and code submitted along with the manuscript.
+
+---
+class: center middle hide-count
+
+## More people would share their data and code if it was easy for them to do so
+
+---
+
+class: center middle hide-count inverse
+
+# How to make your analysis reproducible
+
+---
+
+class: left middle hide-count
+
+background-image: url(img/map.png)
+
+background-size: contain
+background-position: left
+
+.right-pic[
+### Result considered 'reproducible' if I can follow the 'analytical map' and calculate the same result that was reported in the paper
+]
+
+
+---
+class: left middle hide-count
+
+
+### &lt;i class="fad fa-map-marked-alt"&gt;&lt;/i&gt; Use a software program that makes it &lt;u&gt;**easy**&lt;/u&gt; to share your analytical 'map' (i.e. the steps used to move from the raw data to the published result)
+### &lt;i class="fad fa-share"&gt;&lt;/i&gt; Share the map (i.e. the code *and* data) with your paper
+
+---
+class: center, middle, hide-count, inverse
+
+# Making the map
+
+---
+
+class: left, middle, hide-count
+&lt;h3&gt;
+&gt;Statistical analysis software that use scripts stored in text files make repeating an exact series of steps significantly easier than those with a graphical user interface where steps must be documented by describing the various menus to click and values to be entered in different windows. 
+&lt;/h3&gt;
+&lt;sub&gt;Source: &lt;a href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpet.32"&gt;Open and Reproducible Research on Open Science Framework&lt;/a&gt;&lt;/sub&gt;
+
+---
+class: left, middle, hide-count
+
+.pull-left[
+&lt;img src="img/rmarkdown.png" /&gt;
+]
+
+.pull-right[
+&lt;img src="https://www.quantargo.com/img/modules/data-analysis-with-r/rmarkdown.png" /&gt;
+]
+&lt;div align="center"&gt;
+&lt;i class="fad fa-link"&gt;&lt;/i&gt;&lt;a href="https://aconway.dev/rstudio"&gt;Example&lt;/&gt;
+&lt;/div&gt;
+---
+class: center, middle, hide-count, inverse
+
+# Sharing the map
+
+---
+class: middle, center, hide-count
+
+# Reproducible software environment
+
+---
+class: center, middle, hide-count, inverse
+
+# &lt;sub&gt;&lt;a href="https://mybinder.org" /&gt;&lt;img src="https://mybinder.readthedocs.io/en/latest/_static/logo.png" height="70px" /&gt;&lt;/a&gt;&lt;/sub&gt; binder
+---
+class: left, top, hide-count
+
+&lt;iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/sequence.pdf" height="100%" width="100%" style="border: none;"&gt;&lt;/iframe&gt;
+
+---
+class: left, middle, hide-count
+
+##&lt;i class="fad fa-check-circle"&gt;&lt;/i&gt;  Can find out with a single click if results can be 'reproduced'
+
+## &lt;i class="fab fa-github-square"&gt;&lt;/i&gt; Need to know how to use git (version control)
+
+##&lt;i class="fad fa-flushed"&gt;&lt;/i&gt; Need to know how to navigate RStudio to 'reproduce' the analysis
+
+
+---
+class: center, middle, hide-count, inverse
+
+#&lt;i class="fad fa-link"&gt;&lt;/i&gt; Nextjournal
+
+---
+class: left, top, hide-count
+
+
+&lt;iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/resp-survival.pdf" height="100%" width="100%" style="border: none;"&gt;&lt;/iframe&gt;
+
+---
+class: left, middle, hide-count
+
+##&lt;i class="fad fa-check-circle"&gt;&lt;/i&gt; Determine 'reproducibility' with a single click
+
+##&lt;i class="fad fa-wifi-2"&gt;&lt;/i&gt; Can do all of your analyses in the notebook
+
+##&lt;i class="fad fa-users"&gt;&lt;/i&gt; Collaborate with your team online
+
+---
+class: center, middle, hide-count, inverse
+
+# Clarification about data sharing
+
+---
+class: left, middle, hide-count
+
+## The data sharing I have talked about is in regard to reproducibility - not data sharing for secondary use
+
+---
+class: center middle hide-count inverse
+
+# Added benefits from using R
+
+---
+
+class: left middle hide-count
+
+### &lt;i class="fad fa-angle-double-right"&gt;&lt;/i&gt; Interactive visualisations
+
+### &lt;i class="fad fa-angle-double-right"&gt;&lt;/i&gt;Tracking study progress with dashboards
+
+### &lt;i class="fad fa-angle-double-right"&gt;&lt;/i&gt;Uploading content from a protocol directly to clinicaltrials.gov
+
+### &lt;i class="fad fa-angle-double-right"&gt;&lt;/i&gt;Interactive exercises for teaching in NUR1027
+
+### &lt;i class="fad fa-angle-double-right"&gt;&lt;/i&gt;Track discussion board posts in Quercus
+
+---
+class: center middle hide-count inverse
+
+# Interactive visualisations
+
+---
+
+class: center middle hide-count
+
+### &lt;i class="fad fa-link"&gt;&lt;/i&gt; [Zero heat flux systematic review](https://aconway.dev/zhf)
+
+### &lt;i class="fad fa-link"&gt;&lt;/i&gt; [Pre-apneic capnography waveform abnormalities](https://aconway.dev/pre-apneic)
+
+### &lt;i class="fad fa-link"&gt;&lt;/i&gt; [Individualized output from cost-effectiveness analyses](https://sedationapps.shinyapps.io/thermalbundleCEA)
+
+---
+class: center middle hide-count inverse
+
+# Uploading protocol direct to clinicaltrials.gov
+
+---
+
+
+class: center top hide-count
+
+&lt;img src="img/logo.png" height = "200px"/&gt;
+
+## A workflow to enable direct upload of a clinical trial protocol to clinicaltrials.gov
+&lt;br&gt;
+
+### Aaron Conway
+### &lt;i class="fab fa-github-square"&gt;&lt;/i&gt; [Code](http://github.com/awconway/spiritR) &lt;i class="fad fa-link"&gt;&lt;/i&gt; [spiritR.netlify.com](https://spiritR.netlify.com) &lt;i class="fab fa-twitter-square"&gt;&lt;/i&gt; [aw_conway](https://twitter.com/aw_conway)
+
+
+---
+class: center, bottom hide-count
+
+background-image: url(img/overview_workflow.png)
+background-size: contain
+
+### &lt;i class="fad fa-link"&gt;&lt;/i&gt; [HFNO protocol](https://www.aaronconway.info/HFNO/Protocol.html)
+
+
+---
+
+class: center middle hide-count inverse
+
+# Tracking study progress
+
+---
+
+class: center middle hide-count
+
+## Automate the steps of **accessing** and **processing** data that is getting continually updated
+
+## A great use case for this is to assist with tracking screening and recruitment progress
+
+### &lt;i class="fad fa-link"&gt;&lt;/i&gt; &lt;a href="https://aconway.dev/hfno"&gt;HFNO Dashboard&lt;/a&gt;
+
+---
+
+class: center middle hide-count inverse
+
+# Teaching
+---
+
+class: middle center hide-count
+
+### &lt;i class="fad fa-laptop-code"&gt;&lt;/i&gt; 'Interactive' exercises for students to analyse &lt;u&gt;*real*&lt;/u&gt; data
+
+### Assist learning concepts related to measurement and statistics in quantitative research 
+
+ &lt;i class="fad fa-link"&gt;&lt;/i&gt; &lt;a href="https://nur1027.netlify.com"&gt;NUR1027&lt;/a&gt;
+
+---
+
+class: top center hide-count
+
+### Using the Quercus API to track discussion board activity
+
+
+&lt;img src="img/discussion-app.png" height="550px"/&gt;
+
+
+---
+
+class: top center hide-count
+
+### Using the Quercus API to track discussion board activity
+
+&lt;img src="img/discussion-app-filter.png" height="550px"/&gt;
+
+
+---
+
+class: middle center hide-count
+
+# Demonstration
+
+&lt;i class="fad fa-link"&gt;&lt;/i&gt; &lt;a href="https://q.utoronto.ca"&gt;Quercus&lt;/a&gt;
+
+&lt;i class="fad fa-link"&gt;&lt;/i&gt; &lt;a href="https://aconway.dev/rstudio/"&gt;RStudio&lt;/a&gt;
+
+---
+
+---
+class: center, middle, hide-count, inverse
+
+# Take-away messages
+
+---
+class: center, middle, hide-count
+
+### Learning to use tools that make it easy to provide evidence that your results are reproducible is a good idea
+
+### Even if you have not been trained in this approach, it is a good idea to support whoever does your analyses to use these tools
+
+### Time invested in learning to use R will pay off in ways that you may not appreciate until later
+
+---
+class: center middle, hide-count, inverse
+
+
+# Thank you
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
