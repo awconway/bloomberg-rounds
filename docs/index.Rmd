@@ -1,17 +1,14 @@
 ---
 output:
   xaringan::moon_reader:
+    self_contained: false
     lib_dir: libs
     css: xaringan-themer.css
-    seal: false
     nature:
-      highlightStyle: github
-      highlightLines: true
       ratio: 16:9
     includes:
       in_header: fa.html
 ---
-
 
 
 class: center top hide-count
@@ -29,7 +26,7 @@ class: left middle hide-count
 
 ##<i class="fad fa-exclamation-triangle"></i> The reproducibility problem
 
-##<i class="fad fa-toolbox"></i> How to make your analysis reproducible
+##<i class="fad fa-toolbox"></i> How to make your analyses reproducible
 
 ##<i class="fad fa-grin-stars"></i> Added benefits from using R
 
@@ -75,13 +72,13 @@ class: center middle hide-count
 ---
 class: center, middle, hide-count
 <h2><div align="left">
-<blockquote>Reproducibility has the potential to serve as a <strong>minimum standard</strong> for judging scientific claims when full independent replication of a study is not possible.
+<blockquote>
+Reproducibility has the potential to serve as an <strong>attainable minimum standard</strong> for judging scientific claims when full independent replication of a study is not possible.
 <blockquote>
 </div>
 </h2>
 
-<img src="https://annakrystalli.me/talks/assets/repro-spectrum.jpg"/>
-<sub>Source: https://annakrystalli.me/talks/assets/repro-spectrum.jpg</sub>
+<sub><a href="https://science.sciencemag.org/content/334/6060/1226">Peng, R. (2011). Reproducible Research in Computational Science. <i>Science, 334</i>(6060), 1226-1227.</a></sub>
 
 
 ???
@@ -94,6 +91,14 @@ class: center, middle, hide-count
 class: center middle hide-count
 
 ## More people would share their data and code if it was easy for them to do so
+
+---
+
+class: left, middle, hide-count
+<h3>
+>Statistical analysis software **designed** to use scripts stored in text files make repeating an exact series of steps significantly easier than those with a graphical user interface.
+</h3>
+<sub>Source: <a href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpet.32">Open and Reproducible Research on Open Science Framework</a></sub>
 
 ---
 
@@ -118,36 +123,37 @@ background-position: left
 ---
 class: left middle hide-count
 
-
-### <i class="fad fa-map-marked-alt"></i> Use a software program that makes it <u>**easy**</u> to share your analytical 'map' (i.e. the steps used to move from the raw data to the published result)
+### <i class="fad fa-map-marked-alt"></i> Use a software program that makes it <u>**easy**</u> to create an analytical 'map' (i.e. the steps used to move from the raw data to the published result)
 ### <i class="fad fa-share"></i> Share the map (i.e. the code *and* data) with your paper
 
 ---
 class: center, middle, hide-count, inverse
 
-# Making the map
+
+# Using R to make the 'map'
+
+<iframe width='100%' height='80%' src='https://rdrr.io/snippets/embed/?code=mtcars%0A%0Alibrary(ggplot2)%0A%0Aggplot(mtcars%2C%20aes(x%3Dcyl%2C%20y%3Dmpg))%20%2B%0A%20%20%20%20%20%20%20geom_point()' frameborder='0'></iframe>
 
 ---
 
-class: left, middle, hide-count
-<h3>
->Statistical analysis software that use scripts stored in text files make repeating an exact series of steps significantly easier than those with a graphical user interface where steps must be documented by describing the various menus to click and values to be entered in different windows. 
-</h3>
-<sub>Source: <a href="https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpet.32">Open and Reproducible Research on Open Science Framework</a></sub>
-
----
 class: left, middle, hide-count
 
 .pull-left[
 <img src="img/rmarkdown.png" />
 ]
 
-.pull-right[
-<img src="https://www.quantargo.com/img/modules/data-analysis-with-r/rmarkdown.png" />
+.red-square[
+<img src="https://www.quantargo.com/img/modules/data-analysis-with-r/rmarkdown.png"/>
 ]
-<div align="center">
-<i class="fad fa-link"></i><a href="https://aconway.dev/rstudio">Example</>
-</div>
+
+---
+class: center, middle, hide-count
+
+# Demonstration
+
+###<a href="https://aconway.dev/rstudio/"><i class="fad fa-link"></i> Accuracy of zero heat flux thermometers: A systematic review</a>
+
+
 ---
 class: center, middle, hide-count, inverse
 
@@ -157,6 +163,23 @@ class: center, middle, hide-count, inverse
 class: middle, center, hide-count
 
 # Reproducible software environment
+
+<img src="https://science.sciencemag.org/content/sci/334/6060/1226/F1.large.jpg?width=800&height=600&carousel=1"/>
+<sub>Source: <a href="https://science.sciencemag.org/content/334/6060/1226">Peng, R. (2011). Reproducible Research in Computational Science. <i>Science, 334</i>(6060), 1226-1227.</a></sub>
+
+<!-- --- -->
+<!-- class: center, middle, hide-count, inverse -->
+
+<!-- # Just the data and code -->
+
+<!-- --- -->
+<!-- class: center, middle, hide-count -->
+
+
+<!-- ## <a href="https://thorax.bmj.com/content/74/2/157.abstract">Accuracy and precision of transcutaneous carbon dioxide monitoring: a systematic review and meta-analysis</a> -->
+
+<!-- <i class="fad fa-link"></i> <a href="https://aconway.dev/rstudio/">RStudio</a> -->
+
 
 ---
 class: center, middle, hide-count, inverse
@@ -172,10 +195,11 @@ class: left, middle, hide-count
 
 ##<i class="fad fa-check-circle"></i>  Can find out with a single click if results can be 'reproduced'
 
-## <i class="fab fa-github-square"></i> Need to know how to use git (version control)
+##<i class="fad fa-check-circle"></i>  Associated with Github repository
+
+##<i class="fad fa-flushed"></i> Need to know how to use git (version control)
 
 ##<i class="fad fa-flushed"></i> Need to know how to navigate RStudio to 'reproduce' the analysis
-
 
 ---
 class: center, middle, hide-count, inverse
@@ -197,15 +221,33 @@ class: left, middle, hide-count
 
 ##<i class="fad fa-users"></i> Collaborate with your team online
 
+##<i class="fad fa-upload"></i> Persistent source - can get DOI 
+
 ---
 class: center, middle, hide-count, inverse
 
-# Clarification about data sharing
+# Clarifications
 
 ---
 class: left, middle, hide-count
 
+## The fact that an analysis is reproducible does not guarantee the quality, correctness, or validity of the published results. 
+
 ## The data sharing I have talked about is in regard to reproducibility - not data sharing for secondary use
+
+---
+class: center, middle, hide-count, inverse
+
+# Take-away messages
+
+---
+class: left, top, hide-count
+
+### Tools that allow you to provide definitive evidence of reproducibility are available (for free!)
+
+### Learning to use those tools is a good idea - there may come a day where providing evidence of reproducibility is a requirement
+
+### Support those in your team doing the analyses to use these tools (eg. a statistician or a student)
 
 ---
 class: center middle hide-count inverse
@@ -235,11 +277,35 @@ class: center middle hide-count inverse
 
 class: center middle hide-count
 
+## Supplementary information for systematic review
+
 ### <i class="fad fa-link"></i> [Zero heat flux systematic review](https://aconway.dev/zhf)
 
-### <i class="fad fa-link"></i> [Pre-apneic capnography waveform abnormalities](https://aconway.dev/pre-apneic)
+---
 
-### <i class="fad fa-link"></i> [Individualized output from cost-effectiveness analyses](https://sedationapps.shinyapps.io/thermalbundleCEA)
+class: center top hide-count
+
+### Visualizations for complex analyses
+
+<iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/resp-survival.pdf" height="70%" width="100%" style="border: none;"></iframe>
+
+---
+class: center top hide-count
+
+### Individualized output for cost-effectiveness analyses
+
+<iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/thermal-bundle.pdf" height="70%" width="100%" style="border: none;"></iframe>
+
+---
+class: center middle hide-count inverse
+
+# Take away message
+
+---
+
+class: center middle hide-count
+
+## Journals don't (seem to) have a problem with linking to external resources
 
 ---
 class: center middle hide-count inverse
@@ -266,8 +332,9 @@ class: center, bottom hide-count
 background-image: url(img/overview_workflow.png)
 background-size: contain
 
-### <i class="fad fa-link"></i> [HFNO protocol](https://www.aaronconway.info/HFNO/Protocol.html)
+### <i class="fad fa-link"></i> [HFNO protocol](https://www.aaronconway.info/HFNO/Protocol.html) 
 
+[![](https://cranlogs.r-pkg.org/badges/spiritR)](https://cran.rstudio.com/web/packages/spiritR/index.html)
 
 ---
 
@@ -290,6 +357,7 @@ class: center middle hide-count
 class: center middle hide-count inverse
 
 # Teaching
+
 ---
 
 class: middle center hide-count
@@ -299,25 +367,21 @@ class: middle center hide-count
 ### Assist learning concepts related to measurement and statistics in quantitative research 
 
  <i class="fad fa-link"></i> <a href="https://nur1027.netlify.com">NUR1027</a>
+ 
+---
+
+class: middle center hide-count
+
+background-image: url(img/quercus-interactive.png)
+
+background-size: contain
+
 
 ---
 
-class: top center hide-count
+class: center middle hide-count inverse
 
-### Using the Quercus API to track discussion board activity
-
-
-<img src="img/discussion-app.png" height="550px"/>
-
-
----
-
-class: top center hide-count
-
-### Using the Quercus API to track discussion board activity
-
-<img src="img/discussion-app-filter.png" height="550px"/>
-
+# Track discussion board posts
 
 ---
 
@@ -330,20 +394,31 @@ class: middle center hide-count
 <i class="fad fa-link"></i> <a href="https://aconway.dev/rstudio/">RStudio</a>
 
 ---
+class: top center hide-count
+
+## Tab to view activity per week
+
+<img src="img/discussion-app.png" height="550px"/>
+
+
+---
+
+class: top center hide-count
+
+## Tab to view overall activity and filter by student
+
+<img src="img/discussion-app-filter.png" height="550px"/>
+
 
 ---
 class: center, middle, hide-count, inverse
 
-# Take-away messages
+# Take-away message
 
 ---
 class: center, middle, hide-count
 
-### Learning to use tools that make it easy to provide evidence that your results are reproducible is a good idea
-
-### Even if you have not been trained in this approach, it is a good idea to support whoever does your analyses to use these tools
-
-### Time invested in learning to use R will pay off in ways that you may not appreciate until later
+### Time invested in learning to use R to make your analyses reproducible **will** pay off in other ways that you may not appreciate until later
 
 ---
 class: center middle, hide-count, inverse

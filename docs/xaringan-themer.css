@@ -195,3 +195,12 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
     left: 0 !important;
   }
 }
+
+.red-square {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 75%;
+  top: -5%;
+  transform: translate(-50%, 50%);
+}
