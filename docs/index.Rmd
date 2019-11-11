@@ -81,12 +81,6 @@ Reproducibility has the potential to serve as an <strong>attainable minimum stan
 <sub><a href="https://science.sciencemag.org/content/334/6060/1226">Peng, R. (2011). Reproducible Research in Computational Science. <i>Science, 334</i>(6060), 1226-1227.</a></sub>
 
 
-???
-## Data shared in accessible format
-## Public funding 
-## Journals may one day (soon) *require* that data *and* code are made available
-## *Biostatistics* 'badges' articles with an R if the associate editor can reproduce the results reported in the paper with the data and code submitted along with the manuscript.
-
 ---
 class: center middle hide-count
 
@@ -132,7 +126,11 @@ class: center, middle, hide-count, inverse
 
 # Using R to make the 'map'
 
-<iframe width='100%' height='80%' src='https://rdrr.io/snippets/embed/?code=mtcars%0A%0Alibrary(ggplot2)%0A%0Aggplot(mtcars%2C%20aes(x%3Dcyl%2C%20y%3Dmpg))%20%2B%0A%20%20%20%20%20%20%20geom_point()' frameborder='0'></iframe>
+---
+
+class: left, middle, hide-count
+
+<iframe width='100%' height='100%' src='https://rdrr.io/snippets/embed/?code=mtcars%0A%0Alibrary(ggplot2)%0A%0Aggplot(mtcars%2C%20aes(x%3Dcyl%2C%20y%3Dmpg))%20%2B%0A%20%20%20%20%20%20%20geom_point()' frameborder='0'></iframe>
 
 ---
 
@@ -182,26 +180,7 @@ class: middle, center, hide-count
 
 
 ---
-class: center, middle, hide-count, inverse
 
-# <sub><a href="https://mybinder.org" /><img src="https://mybinder.readthedocs.io/en/latest/_static/logo.png" height="70px" /></a></sub> binder
----
-class: left, top, hide-count
-
-<iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/sequence.pdf" height="100%" width="100%" style="border: none;"></iframe>
-
----
-class: left, middle, hide-count
-
-##<i class="fad fa-check-circle"></i>  Can find out with a single click if results can be 'reproduced'
-
-##<i class="fad fa-check-circle"></i>  Associated with Github repository
-
-##<i class="fad fa-flushed"></i> Need to know how to use git (version control)
-
-##<i class="fad fa-flushed"></i> Need to know how to navigate RStudio to 'reproduce' the analysis
-
----
 class: center, middle, hide-count, inverse
 
 #<i class="fad fa-link"></i> Nextjournal
@@ -226,6 +205,27 @@ class: left, middle, hide-count
 ---
 class: center, middle, hide-count, inverse
 
+# <sub><a href="https://mybinder.org" /><img src="https://mybinder.readthedocs.io/en/latest/_static/logo.png" height="70px" /></a></sub> binder
+---
+class: left, top, hide-count
+
+<iframe src="https://www.aaronconway.info/web/viewer.html?file=%2Fpdf/sequence.pdf" height="100%" width="100%" style="border: none;"></iframe>
+
+---
+class: left, middle, hide-count
+
+##<i class="fad fa-check-circle"></i>  Can find out with a single click if results can be 'reproduced'
+
+##<i class="fad fa-check-circle"></i>  Associated with Github repository (stay within normal workflow)
+
+##<i class="fad fa-flushed"></i> Need to know how to use git (version control)
+
+##<i class="fad fa-flushed"></i> Need to know how to navigate RStudio to 'reproduce' the analysis
+
+---
+
+class: center, middle, hide-count, inverse
+
 # Clarifications
 
 ---
@@ -247,7 +247,7 @@ class: left, top, hide-count
 
 ### Learning to use those tools is a good idea - there may come a day where providing evidence of reproducibility is a requirement
 
-### Support those in your team doing the analyses to use these tools (eg. a statistician or a student)
+### Support those in your team doing analyses to use these tools (eg. a statistician or a student)
 
 ---
 class: center middle hide-count inverse
@@ -351,6 +351,9 @@ class: center middle hide-count
 ## A great use case for this is to assist with tracking screening and recruitment progress
 
 ### <i class="fad fa-link"></i> <a href="https://aconway.dev/hfno">HFNO Dashboard</a>
+
+### <i class="fad fa-link"></i> <a href="https://aconway.dev/hfno">Study homepage</a>
+
 
 ---
 
