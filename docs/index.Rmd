@@ -39,14 +39,13 @@ class: center middle hide-count inverse
 ---
 class: center middle hide-count
 
-## Even the most well-meaning of us can make careless errors that undermine the reproducibility and *credibility* of science
+### Historically, the replication of a scientific experiment has been the 'gold-standard' measure of its validity
 
----
-class: center middle hide-count
+### 'Replicability’ is the ability of a researcher to duplicate the results of a prior study if the same procedures are followed but new data are collected
 
-background-image: url(http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg)
+### Not all experiments can be replicated
 
-background-size: contain
+<sub>Peng RD: Reproducible research and Biostatistics. Biostatistics. 2009; 10(3): 405–408.</a>
 
 ---
 
@@ -59,14 +58,14 @@ background-size: contain
 background-position: left
 
 .pull-right[
-## Why reproducibility is so hard
+## Why replication is so hard
 ]
 
+
 ---
-class: center middle hide-count
+class: center middle hide-count inverse
 
-
-<iframe width="600" height="400" src="https://www.youtube.com/embed/66oNv_DJuPc" frameborder="0" allowfullscreen></iframe>
+### ‘Reproducibility’ is the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator
 
 
 ---
@@ -79,7 +78,6 @@ Reproducibility has the potential to serve as an <strong>attainable minimum stan
 </h2>
 
 <sub><a href="https://science.sciencemag.org/content/334/6060/1226">Peng, R. (2011). Reproducible Research in Computational Science. <i>Science, 334</i>(6060), 1226-1227.</a></sub>
-
 
 ---
 class: center middle hide-count
@@ -352,7 +350,7 @@ class: center middle hide-count
 
 ### <i class="fad fa-link"></i> <a href="https://aconway.dev/hfno">HFNO Dashboard</a>
 
-### <i class="fad fa-link"></i> <a href="https://aconway.dev/hfno">Study homepage</a>
+### <i class="fad fa-link"></i> <a href="https://www.aaronconway.info/HFNO">Study homepage</a>
 
 
 ---
