@@ -390,10 +390,6 @@ class: middle center hide-count
 
 # Demonstration
 
-<i class="fad fa-link"></i> <a href="https://q.utoronto.ca">Quercus</a>
-
-<i class="fad fa-link"></i> <a href="https://aconway.dev/rstudio/">RStudio</a>
-
 ---
 class: top center hide-count
 
